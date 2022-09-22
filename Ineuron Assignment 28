@@ -1,0 +1,33 @@
+Q1.   Create a table(Student) with 3 columns(rollno,name,course)
+Ans.   create table student(Roll_no. int,Name text,Course text);   ......    //primary Key(Roll_No);
+
+Q2.   Insert Records for 4 student.
+Ans.   insert into student values(1,'Chamcham','B.Sc(Med.)',2,'Rajeev',B.Tech,3,'Harsh','C.B.S.C',4,'Sunita','I.A');
+
+Q3.   Write a select query to fetch all students.
+Ans.   select * from student;
+
+Q4.   Update the student name of Roll no 3 with 'Mohan'.
+Ans.   update student set Name='Mohan' where Roll_no=3;
+
+Q5.   Delete any student from table with their rollno.
+Ans.   delete from student where Roll_no=3;
+
+Q6.   Delete all the data from student Table.
+Ans.   delete * from student;
+
+Q7.   Drop the student table.
+Ans.   select * from student;
+
+Q8.   Create course table(cid,cname)where cid is the primary key and student table (Roll_no,Name,cid) where Roll_no is a primary key and cid is a foregin key.
+Ans.   create table course(Course_id int,Couse_Name text) primary key(Course_id);
+       create table student(Roll_no int,Name text,Course_id int) primary key(Roll_no);
+       
+Q9.   Insert adat in both the table.
+Ans.   insert into course value(101,'C',102, 'CPP',103,'Python', 104, 'Java',105,'Blockchain');
+       insert into student value(61,'Chamcham Roy',101,62,'Rajeev Gupta',103,63,'Harsh',101,64,'Dev',102);
+       
+Q10.  Select all the student who are doing a specific course eg. Python.
+Ans.   select * from student where Course_id=103;
+
+
